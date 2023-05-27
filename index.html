@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gated Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Gated Website!</h1>
+    <div id="login-form">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="dashboard" style="display: none;">
+      <h2>Dashboard</h2>
+      <p>Welcome, <span id="username-display"></span>!</p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
